@@ -1,0 +1,86 @@
+/* 校园生活页面样式 */
+
+.content-item {
+    padding: 20px;
+}
+
+/* 使用flex布局分成两个左右容器 */
+.activity,
+.computer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 志愿活动部分 */
+.activity-left {
+    width: 50%;
+}
+
+.activity-right {
+    width: 50%;
+    text-align: right;
+}
+
+.activity-right>img {
+    /* 调整照片位置 */
+    width: 70%;
+    border-radius: 5px;
+}
+
+/* 计算机协会部分 */
+/* 文字靠右 */
+.computer-title {
+    text-align: right;
+}
+
+.computer-left {
+    width: 50%;
+    text-align: left;
+}
+
+.computer-right {
+    width: 50%;
+}
+
+.computer-left>img {
+    /* 调整照片位置 */
+    width: 70%;
+    border-radius: 5px;
+}
+
+/* 大学成绩部分 */
+.grades {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 表格部分 */
+table {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: thin solid white;
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+table table th {
+    background-color: white;
+}
+
+td,
+th {
+    border: thin dotted white;
+    padding: 5px;
+}
+
+th {
+    background-color: #02409e;
+}
+
+.cellcolor {
+    background-color: #5ea6f3;
+}

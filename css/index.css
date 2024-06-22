@@ -1,0 +1,77 @@
+/* 网站首页页面样式 */
+
+/* 内容各部分flex */
+.content-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 0%;
+    border-bottom: 2px white dashed;
+}
+
+/* 标题居中 */
+.item-title{
+    text-align: center;
+}
+
+/* 个人资料部分使用flex布局分为左右两部分 */
+.information{
+    width: 100%;
+    display: flex;
+    justify-content:right;
+}
+.information-left{
+    text-align: right;
+    width: 50%;
+  
+}
+.information-right{
+   width: 60%;
+}
+
+.information-left > img {
+    width: 30%;
+    /* 调整照片位置 */
+    margin-right: 20%;
+    margin-top: 30%; 
+    border-radius: 5px;
+}
+
+/* 表单部分 */
+form {
+	display: table;
+	padding: 10px;
+}
+
+form textarea {
+	width: 500px;
+	height: 200px;
+}
+
+div.tableRow {
+	display: table-row;
+}
+
+div.tableRow p {
+	display: table-cell;
+	vertical-align: top;
+	padding: 3px;
+}
+div.tableRow p:first-child {
+	text-align: right;
+    display: flex;
+    align-items: center;
+}
+p.heading {
+	font-weight: bold;
+}
+
+input ,textarea,select,option{
+    outline-style: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+

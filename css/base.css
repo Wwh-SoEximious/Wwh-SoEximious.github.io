@@ -1,0 +1,92 @@
+/* 基础布局样式 */
+
+body{
+    /* 使用flex */
+    display: flex;  
+    flex-direction: column;  
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    background-color: #131B26;
+    color: white;
+}
+
+/* 统一a标签，不要下划线，字体颜色为白色 */
+a{
+  text-decoration: none;
+  color: white;
+}
+/* 统一div标签，背景都是一个颜色 */
+div,header{
+    border-radius: 10px;
+}
+
+
+/* 头部导航栏 */
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: #1D2A3B;
+}
+/* 头部左边 */
+header .header-left{
+    width: 40%;
+    height: 70px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 头部右侧使用flex布局让子元素平均摊开 */
+header .header-right{
+    width: 60%;
+    height: 70px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 标签内再次使用flex布局使得文字居中 */
+header .header-right a{
+    width: 100%;
+    height: 100%;
+    margin: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .header-right a:hover{
+    background-color: rgb(107, 112, 116);
+}
+
+/* 页面title */
+.central-title{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px white dashed;
+    font-size: larger;
+    font-weight: 700;
+}
+.central{
+    padding: 10px;
+}
+
+/* 中部内容 */
+.central{
+    margin: 70px;
+    flex: 1; /* 这将使内容占据除了页脚之外的所有可用空间 */ 
+}
+
+/* 尾部信息 */
+footer {
+    font-size: smaller;
+    margin: 30px;
+    text-align: center;
+}

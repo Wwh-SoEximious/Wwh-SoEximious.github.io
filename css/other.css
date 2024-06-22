@@ -1,0 +1,11 @@
+/* 其他补充页面样式 */
+
+/* 使用浮动布局 */
+.content-item {
+    float: left;
+}
+
+.content-item > img{
+    height: 300px;
+    margin: 20px;
+}

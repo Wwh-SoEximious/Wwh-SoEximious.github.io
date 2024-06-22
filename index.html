@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站-首页</title>
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 网站首页页面样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 头部导航 -->
+    <header>
+        <div class="header-left">王闻慧 的个人网站，欢迎光临~</div>
+        <div class="header-right">
+            <a href="./index.html" target="_blank">网站首页</a>
+            <a href="./html/campus.html" target="_blank">校园生活</a>
+            <a href="./html/project.html" target="_blank">我的项目</a>
+            <a href="./html/contest.html" target="_blank">竞赛经历</a>
+            <a href="./html/other.html" target="_blank">其他补充</a>
+        </div>
+    </header>
+    <!-- 中部内容 -->
+    <div class="central">
+
+        <!-- 页面title -->
+        <div class="central-title">
+            <h1>网站首页</h1>
+        </div>
+        <!-- 页面内容 -->
+
+        <!-- 网站介绍 -->
+        <div class="content-item">
+            <div class="item-title">
+                <h1>网站介绍</h1>
+                <h2>（⭐必读）</h2>
+            </div>
+            <div class="item-content">
+                <p>
+                    欢迎来到我的个人博客网站！这里是我分享学习心得、技术见解和生活点滴的小天地。作为一名计算机学生，我热衷于探索编程的奥秘，同时也喜欢将我的所学所得与大家分享。在这里，你可以找到关于编程语言、算法、数据结构等计算机领域的文章，也可以了解到我的日常生活点滴。希望我的博客能为你带来一些启发和帮助，让我们一起在技术的道路上共同进步！
+                </p>
+                <p>本网站为王闻慧（我）个人所有，主要用于记录我在学习计算机的成长过程和技术项目。本站分为五个部分，分别是:
+                    <a href="./index.html" target="_blank"><strong>网站首页、</strong></a>
+                    <a href="./html/campus.html" target="_blank"><strong>校园生活、</strong></a>
+                    <a href="./html/project.html" target="_blank"><strong>我的项目、</strong></a>
+                    <a href="./html/contest.html" target="_blank"><strong>竞赛经历、</strong></a><a href="./html/other.html"
+                        target="_blank"><strong>其他补充</strong></a>
+                    。欢迎各位小伙伴来了解我！期待和大佬的相遇！😀
+                </p>
+            </div>
+        </div>
+        <!-- 个人资料 -->
+        <div class="content-item">
+            <div class="item-title">
+                <h1>个人资料</h1>
+                <h2>（⭐⭐）</h2>
+            </div>
+            <div class="item-content information">
+                <div class="information-left">
+                    <img src="./images/ID-photo.jpg" alt="ID-">
+                </div>
+                <div class="information-right">
+                    <form action="https://blog.csdn.net/m0_74469506" method="post">
+                        <div class="tableRow">
+                            <p> 名字: </p>
+                            <p> <input type="text" name="name" value="王闻慧" placeholder="王闻慧" required> </p>
+                        </div>
+                        <div class="tableRow">
+                            <p> 性别: </p>
+                            <p>
+                                <input type="radio" name="gender" value="女" placeholder="女" checked> 女 <br>
+                                <input type="radio" name="gender" value="男" placeholder="男"> 男 <br>
+                                <input type="radio" name="gender" value="武装直升机" placeholder="武装直升机">
+                                武装直升机
+                            </p>
+                        </div>
+                        <div class="tableRow">
+                            <p> 年龄: </p>
+                            <p> <input type="number" name="bags" value="20" min="1" max="25" placeholder="20"> </p>
+                        </div>
+                        <div class="tableRow label">
+                            <p> 出生年月: </p>
+                            <p> <input type="date" name="date" value="2003-06-21" placeholder="2003-06-21"> </p>
+                        </div>
+                        <div class="tableRow">
+                            <p>
+                                身份:
+                            </p>
+                            <p>
+                                <select name="role" title="role">
+                                    <option value="student">学生</option>
+                                    <option value="preparing-programmer">预备役程序员</option>
+                                    <option value="post-2000s">00后</option>
+                                    <option value="novel-comic-fan">小说漫画狂魔</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="tableRow">
+                            <p> 地址: </p>
+                            <p> <input type="text" name="address" value="湖北省武汉市" placeholder="湖北省武汉市" required> </p>
+                        </div>
+                        <div class="tableRow">
+                            <p> 邮箱: </p>
+                            <p> <input type="email" name="zip" value="2571450343@qq.com" placeholder="2571450343@qq.com"
+                                    required> </p>
+                        </div>
+                        <div class="tableRow">
+                            <p> 电话: </p>
+                            <p> <input type="tel" name="phone" value="18308928976" placeholder="18308928976" required>
+                            </p>
+                        </div>
+                        <div class="tableRow">
+                            <p> 个人介绍: </p>
+                            <p>
+                                <textarea name="comments"
+                                    placeholder="本人学识渊博，经验丰富，代码风骚，效率恐怖。java，html,css无不精通，熟练掌握各种框架。做项目嘎嘎快，小程序、管理系统等不在话下！听指挥，执行快，脾气好，不喷人，操作虎，意识强，渗透快，能过盾。千里之外取服务器首级，瞬息之间爆管理员狗头，压安全狗如压草芥。电话通知出Bug后，秒登vpn，千里之外定位问题，瞬息之间修复上线。只有你想不到的，没有我做不到的。当然，以上多少都有点夸张，本人还是一个普通的计算机学生，这个总站主要记录学习的过程和成长经验。分享技术干货，让我们一起共勉，探索计算机的奥妙。道阻且长，不行不至。"></textarea>
+                            </p>
+                        </div>
+                        <div class="tableRow">
+                            <p></p>
+                            <p> <input type="submit" value="提交修改 （该功能暂不支持,点击将前往我的博客）"> </p>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!-- 我的简历 -->
+        <div class="content-item">
+            <div class="item-title">
+                <h1>我的简历</h1>
+                <h2>（⭐必读）</h2>
+            </div>
+            <div class="item-content">
+                <img src="./images/jianli.png" alt="我的简历">
+            </div>
+        </div>
+    </div>
+    <!-- 尾部信息 -->
+    <footer>
+        <div>
+            <a href="./images/wx.jpg" target="_blank">版权所有：怒码少年-王闻慧</a>&nbsp;|&nbsp;备案号：正在公安审核，稍等~&nbsp;|&nbsp;&copy;
+            2024-06-12
+        </div>
+    </footer>
+</body>
+
+</html>

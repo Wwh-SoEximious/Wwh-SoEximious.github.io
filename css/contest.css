@@ -1,0 +1,24 @@
+/* 竞赛经历页面样式 */
+
+/* 把中部(主体内容区)分为左右两个容器 */
+.content {
+   display: flex;
+}
+
+.content > .content-item {
+    width: 50%;
+    padding: 10px;
+}
+/* 左右两个容器里,改变主轴方向,使得容器里的内容垂直居中 */
+.content-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.item-content > img {
+    width: 70%;
+    margin: 10px;
+}

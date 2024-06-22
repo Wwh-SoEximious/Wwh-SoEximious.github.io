@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的项目</title>
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- 我的项目页面样式 -->
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+
+<body>
+    <!-- 头部导航 -->
+    <header>
+        <div class="header-left">王闻慧 的个人网站，欢迎光临~</div>
+        <div class="header-right">
+            <a href="../index.html" target="_blank">网站首页</a>
+            <a href="./campus.html" target="_blank">校园生活</a>
+            <a href="./project.html" target="_blank">我的项目</a>
+            <a href="./contest.html" target="_blank">竞赛经历</a>
+            <a href="./other.html" target="_blank">其他补充</a>
+        </div>
+    </header>
+    <!-- 中部 -->
+    <div class="central">
+        <!-- 页面title -->
+        <div class="central-title">
+            <h1>我的项目</h1>
+        </div>
+        <!-- 页面内容 -->
+        <!-- 边栏导航区 -->
+        <nav>
+            <div class="nav-item">
+                <a href="#userCenter">用户管理中心</a>
+            </div>
+            <div class="nav-item">
+                <a href="#xunYou">校园搭子匹配系统</a>
+            </div>
+            <div class="nav-item">
+                <a href="#waiMai">极速外卖</a>
+            </div>
+        </nav>
+        <!-- 项目区 -->
+        <div class="content-item" id="userCenter">
+            <img src="../images/project01.png" alt="用户管理中心" >
+            <div class="item-title">
+                <h1>用户管理中心</h1>
+                <h2>基于SpringBoot + MyBatis-Plus + Ant Design Pro</h2>
+            </div>
+            <div class="item-content">
+                <p>
+                    主要用于集中式管理各个平台的不同用户,方便管理者使用和维护。
+                </p>
+                <p>
+                    在项目中熟悉了 Java 知识(如异常处理、AOP)，能熟练运用 Lambda 表达式编程，使用 JUnit 编写单元测试;能够使用 MyBatis Plus + MyBatis X 自动生成基础 CRUD 代码,掌握了一些常见业务问题的解决方案，如正向/反向代理、全局跨域解决、多环境问题解决等,熟悉 React 框架开发，能够根据业务定制模板，比如封装全局异常处理逻辑、多环境配置等。
+                    能基本使用 Ant Design Pro 框架，以及 Ant Design、Ant Design ProComponents 等组件库的使用
+                </p>
+            </div>
+        </div>
+        <div class="content-item" id="xunYou">
+            <img src="../images/project02.jpg" alt="校园搭子匹配系统" >
+            <div class="item-title">
+                <h1 >校园搭子匹配系统</h1>
+                <h2>基于SpringBoot + MyBatis-Plus + Vue 3</h2>
+            </div>
+            <div class="item-content">
+                <p>
+                    一个可以帮助大家找到相似圈子伙伴的移动端H5网站。实现了用户管理、按标签搜索用户和队伍、推荐相似用户和附近用户、支持组队、在线聊天功能等。
+                </p>
+                <p>
+                    在项目中，我使用 Vite 搭建项目，使用 Vant UI 组件库进行开发，封装了全局通用Layout 组件，使得主页、搜索页、队伍页布局一致，减少重复代码。基于 Vue Router 全局路由守卫实现了根据不同的页面来动态切换导航栏标题。 使用 TypeScript 类型定义保证项目编码规范，提高项目的质量。使用 Redis 缓存高频访问的用户和队伍信息列表,接口响应时间从3秒缩短至42毫秒；使用Redission分布式锁解决分布式下重复加入队伍的问题。 为解决首次访问的用户主页加载过慢的问题，使用 Spring Scheduler 定时任务来实现缓存预热，并通过分布式锁保证多机部署时定时任务不会重复执行。使用编辑距离算法推荐用户和队伍，通过 WebSocket 打造在线聊天室。
+                </p>
+               
+            </div>
+        </div>
+        <div class="content-item" id="waiMai">
+            <img src="../images/project03.jpg" alt="极速外卖" >
+            <div class="item-title">
+                <h1 >极速外卖</h1>
+                <h2>基于SpringBoot + MyBatis-Plus + Ant Design Pro</h2>
+            </div>
+            <div class="item-content">
+                <p>
+                    一个外卖管理系统，分为小程序用户端和网页管理端，解决校外外卖从校门到宿舍和教学楼的最后两公里问题。实现了订单来单提醒、订单管理、骑手管理、邮件提醒等功能。
+                </p>
+                <p>
+                    在项目中，小程序用户端使用 Vant Weapp 、Color UI 布局和其中的组件。使用 Spring Task 和 WebSocket，定时检测校门处是否有新的订单并且向管理端发送提醒；使用 Redis 实现分布式 Session，解决集群间登录态同步问题。 
+利用OSS对象管理实现用户头像和订单投放位置的上传文件功能；全局异常封装处理统一的错误码， 规范异常返回。调用百度地图开放平台接口校验用户端使用的收货地址是否超出配送范围，查看骑手的实时位置。在全局请求配置中，通过 NODE ENV 环境变量区分本地和生产环境发送的请求域名，能够根据项目启动命令自动区分多环境。采用 Nginx 解决跨域问题和前端项目部署，并且使用宝塔面板对项目进行运维监控。使用 Knife4j+Swagger 自动生成后端接口文档，并通过编写 @ApiOperation 等注解补充接口注释。
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    <!-- 尾部信息 -->
+    <footer>
+        <div>
+            <a href="./images/wx.jpg" target="_blank">版权所有：怒码少年-王闻慧</a>&nbsp;|&nbsp;备案号：正在公安审核，稍等~&nbsp;|&nbsp;&copy;
+            2024-06-12
+        </div>
+    </footer>
+</body>
+
+</html>
